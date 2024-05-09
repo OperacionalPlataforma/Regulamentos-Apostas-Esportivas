@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body {
-  font-family: 'inter';
-  background-color: rgb(2, 17, 39);
-  ;
+:root {
+  --dark-blue: rgb(2, 17, 39);
+  --dark-yellow: rgb(253, 217, 45);
+
+  --light-blue: rgb(0, 30, 61);
+  --light-blue-2: rgb(15, 33, 53);
+  --white: rgb(255, 255, 255);
+
 }
 
-
+body {
+  font-family: 'inter';
+}
 
 .promo-details__content-mainhead {
   font-size: 24px;
@@ -86,6 +92,33 @@ body {
 @media only screen and (max-width: 767px) {
   .promo-details__content-display-btn .site-btn {
     width: 100%;
+  }
+}
+
+.l-button {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--dark-yellow);
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.4s, color 0.4s, transform 0.4s;
+  border: 1px solid var(--dark-yellow);
+}
+
+.l-button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transform: scale(1.05);
+  border: 1px solid var(--white);
+}
+
+@media (max-width: 600px) {
+  .l-button {
+    padding: 10px 24px;
+    font-size: 1rem;
   }
 }
 
@@ -397,7 +430,7 @@ body {
 .table-section-wrpr {
   overflow: auto;
   padding: 1px;
-  background-color:rgb(0, 30, 61) ;
+  background-color: rgb(0, 30, 61);
 }
 
 table {
@@ -410,13 +443,13 @@ table {
   max-width: 100%;
   border-style: hidden;
   box-shadow: rgb(238, 0, 0);
-  
+
 }
 
 thead {
   border-bottom: rgb(255, 255, 255);
   background: rgb(28, 61, 95);
-  
+
 }
 
 
@@ -424,19 +457,19 @@ thead {
 table tr td:not(:last-child),
 table tr th:not(:last-child) {
   border: 1px solid yellow;
-  
+
 }
 
 table tr:not(:last-child) {
   border: 1px solid yellow;
-  
+
 }
 
 
 th {
   font-size: 16px;
   font-weight: 700;
-  
+
 }
 
 td {
