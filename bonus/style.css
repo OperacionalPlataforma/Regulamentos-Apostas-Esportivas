@@ -434,6 +434,8 @@ body {
   background-color: rgb(0, 30, 61);
 }
 
+
+
 table {
   border-radius: 8px;
   border-collapse: collapse;
@@ -444,13 +446,13 @@ table {
   max-width: 100%;
   border-style: hidden;
   box-shadow: rgb(238, 0, 0);
+  
 
 }
 
 thead {
   border-bottom: rgb(255, 255, 255);
   background: rgb(28, 61, 95);
-
 }
 
 
